@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+<TextView
+    android:id="@+id/eventDate"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="10dp"
+    android:text="Monday 1 January"
+    android:textStyle="bold"
+    android:textSize="25sp"/>
+
+<TextView
+    android:id="@+id/eventTime"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:layout_alignParentTop="true"
+    android:layout_toStartOf="@+id/eventEditButton"
+    android:layout_marginRight="10dp"
+    android:text="12:30"
+    android:textSize="20sp"/>
+
+<TextView
+    android:id="@+id/eventTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/eventDate"
+    android:text="Rdv Rendez-vous"
+    android:textStyle="bold"
+    android:layout_marginLeft="10dp"/>
+
+<TextView
+    android:id="@+id/eventDescription"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/eventTitle"
+    android:layout_marginLeft="10dp"
+    android:text="Description du RDV si besoin"/>
+
+<ImageButton
+    android:id="@+id/eventEditButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_centerVertical="true"
+    android:background="@null"
+    app:srcCompat="@android:drawable/ic_menu_edit" />
+
+<TextView
+    android:id="@+id/eventId"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="id"
+    android:textAlignment="center"
+    android:visibility="invisible"/>
+
+</RelativeLayout>

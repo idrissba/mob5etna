@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.alternance.etna.agenda.Fragment.CalendarFragment">
+
+    <TextView
+        android:id="@+id/calendarTitle"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="25sp"
+        android:background="@color/tab_checked"
+        android:text="Title" />
+
+    <ImageButton
+        android:id="@+id/calendarAddButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="top|end"
+        android:layout_marginRight="20dp"
+        android:background="@null"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/calendarListView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--/>-->
+
+    <ListView
+        android:id="@+id/calendarListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:divider="@null"
+        android:background="@drawable/background"
+        />
+
+</FrameLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.alternance.etna.agenda.Popup.CreateEventActivity">
+
+    <LinearLayout
+        android:layout_width="372dp"
+        android:layout_height="500dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/popupCreateTitle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/popup_create_event_window_title"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/createEventLabelTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/popup_create_event_event_title"
+            android:textAlignment="textStart" />
+
+        <EditText
+            android:id="@+id/createEventTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/createEventLabelDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/popup_create_event_event_description"
+            android:textAlignment="textStart" />
+
+        <EditText
+            android:id="@+id/createEventDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/createEventLabelDatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/popup_create_event_event_beginning_date"
+            android:textAlignment="textStart" />
+
+        <DatePicker
+            android:id="@+id/createEventDatePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:calendarViewShown="?android:attr/windowOverscan"
+            android:datePickerMode="spinner"
+            android:minDate="01/01/2018"
+            android:textAlignment="textStart" />
+
+        <TextView
+            android:id="@+id/createEventLabelTimePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/popup_create_event_event_beginning_time"
+            android:textAlignment="textStart" />
+
+        <TimePicker
+            android:id="@+id/createEventTimePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:timePickerMode="spinner" />
+
+        <Button
+            android:id="@+id/createEventValidation"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:text="@string/popup_create_event_button_create"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

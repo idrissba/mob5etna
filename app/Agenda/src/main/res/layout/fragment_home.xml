@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.alternance.etna.agenda.Fragment.HomeFragment">
+
+<!-- TODO: Update blank fragment layout -->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="HOME FRAGMENT"
+    android:layout_centerInParent="true"
+    android:textSize="30sp" />
+
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.alternance.etna.agenda.Fragment.HomeFragment">
+        <!--android:layout_below="@id/explanation"-->
+        <!--android:layout_above="@+id/navigation"-->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- ADD FIELDS HERE -->
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
